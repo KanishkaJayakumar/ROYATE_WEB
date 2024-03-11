@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+:root{
+    --black:#333;
+    --lightcolor:#cdaa7c;
+    --box-shadow: .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #000;
+
+}
+
+header{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background: var(--black);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo img
+{
+    height: 60px;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--lightcolor);
+    border: .1rem solid transparent;
+}
+
+
+header .navbar a:hover{
+    color: #fff;
+    border: .1rem solid rgba(205,170,124,.2);
+    border-width: 1rem;
+}
+
+header .icons i{
+    cursor: pointer;
+    width: 4rem;
+    height: 4.5rem;
+    background-color: var(--lightcolor);
+    text-align: center;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+header .icons i:hover{
+    color: #333;
+}
+
+.our-team{
+    margin-top: 80px;
+}
+
+.our-team .heading{
+    font-size: 40px;
+    color: #cdaa7c;
+}
+.our-team .sub-heading{
+    font-size: 28px;
+    background-color: var(--black);
+    color: var(--lightcolor);
+    margin-left: 509px;
+    margin-right: 509px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+
+.our-chef{
+    width: 100%;
+    display: flex;
+    margin-top: 39px;
+    grid-template-columns: repeat(auto-fit,minmax:(50rem,2fr));
+}
+
+.our-chef .item{
+    padding: 55px;
+    position: relative;
+    z-index: 2;
+    overflow : hidden;
+}
+.our-chef .item::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+    left: 0;right: 0;bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 5;
+}
+
+.our-chef .item:hover .item:before{
+    display: block;
+}
+
+.our-chef .item .chef-info{
+    position: absolute;
+    top: 130%;
+    left: 0;right: 0;bottom: 0;top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    align-items: center;
+    transition: 1s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.our-chef .item .chef-info h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: .8rem 0;
+    text-transform: uppercase;
+}
+
+
+.our-chef .item .chef-info span{
+    color: var(--lightcolor);
+    font-size: 2rem;
+    padding: .8rem 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.our-chef .item .chef-info ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 3rem 0;
+   
+}
+
+.our-chef .item .chef-info ul li a{
+    color: #fff;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+.our-chef .item:hover.chef-info{
+    top: 0;
+    
+}
+.our-chef .item img{
+    width: 400px;
+    height: 400px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROYATE</title>
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="shortcut icon" href="navbar\crown-symbol.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="navbar\logo.png" alt=""></a>
+        <nav class="navbar">
+            <a href="royate.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="team.html">Team</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+
+        <div class="icons">
+            <iclass="fasfa-bars"id="menu"></i>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-heart"> </i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+
+    <div class="reservation" id="reservation">
+        <div class="image">
+
+        </div>
+
+        <div class="form">
+            <center><h1 class="heading"> Book a Table</h1></center>
+            <center><p class="sub-heading">~Check out our place now~</p></center>
+    
+            <form>
+                <div class="form-holder">
+                    <div>
+                        <select>
+                            <option>1 people</option>
+                            <option>2 people</option>
+                            <option>3 people</option>
+                            <option>4 people</option>
+                            <option>5 people</option>
+                        </select>
+
+                        <input type="text" name="" placeholder="Time">
+                        <input type="text" name="" placeholder="Phone number">
+                    </div>
+
+                    <div>
+                        <input type="text" name="" placeholder="Date">
+                        <input type="text" name="" placeholder="Name">
+                        <input type="email" name="" placeholder="Email">
+                    </div>
+                </div>
+                <center><a href="#" type="btn" onclick="submit()">Book Now</a></center>
+            </form>
+        </div>
+
+
+    </div>
+</body>
+</html>
+
+<script>
+    function submit(){
+        alert(" Your Reservation Booked Successfully");
+    }
+</script>

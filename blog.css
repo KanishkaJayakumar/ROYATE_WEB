@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blog-welcome .heading {
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.blog-welcome .sub-heading{
+    font-size: 30px;
+    color: #cdaa7c;
+    background-color: #000;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+}
+
+.blog-welcome .box-container{
+    padding: 40px;
+}
+
+.blog-welcome .box-container .box{
+    background-color: #000;
+    /* border: 3px solid #cdaa7c; */
+    /* padding: 40px; */
+    text-align: center;
+    
+}
+
+.box-container {
+    display: flex;
+    background-color: #000;
+}
+
+.box-container img{
+    width: 430px;
+    height: 430px;
+}
+
+.blog-welcome .content{
+    text-align: left;
+    position: relative;
+    padding: 50px;
+}
+
+.blog-welcome .content p
+{
+    color: #cdaa7c;
+    text-align: center;
+}
+
+.blog-welcome .content h3{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.blog-welcome .content a{
+    font-size: 14px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 140px;
+    text-decoration: underline;
+    /* background-color: #cdaa7c; */
+    
+}
+
+.blog-welcome .content a{
+    color: #fff;
+}
+
+.blog-welcome .content img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.footer{
+    background: #000;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 1.3rem;
+    /*   */
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,2fr));
+    color: #b2b2b2;
+    grid-gap: 1rem;
+    padding: 4rem 0;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.footer .container div{
+    padding: 0 7rem;
+}
+
+.footer .container h3{
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: .8rem;
+}
+
+.footer .container input{
+    width: 100%;
+    border: 1px solid #b2b2b2;
+    padding: .5rem .8rem;
+    background: transparent;
+    border-radius: 20px;
+}
+
+.footer .container ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+
+.footer .container ul li a{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 38px;
+    list-style: none;
+}
+
+.footer .container span{
+    display: block;
+}

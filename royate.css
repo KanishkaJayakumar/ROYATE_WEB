@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+:root{
+    --black:#333;
+    --lightcolor:#cdaa7c;
+    --box-shadow: .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+header{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background: var(--black);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo img
+{
+    height: 60px;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--lightcolor);
+    border: .1rem solid transparent;
+}
+
+
+header .navbar a:hover{
+    color: #fff;
+    border: .1rem solid rgba(205,170,124,.2);
+    border-width: 1rem;
+}
+
+header .icons i{
+    cursor: pointer;
+    width: 4rem;
+    height: 4.5rem;
+    background-color: var(--lightcolor);
+    text-align: center;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+header .icons i:hover{
+    color: #333;
+}
+
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.home .home-slider .slide1
+{
+    background: url(https://i.pinimg.com/564x/83/2d/7f/832d7f9d027c708566e9acaab5f4656d.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.home .home-slider .slide2
+{
+    background: url(https://img.freepik.com/premium-photo/italian-dish-pasta-bolognese-with-basil-surrounded-by-spices-onions-black-background_166116-2129.jpg?w=1060);
+    background-size: cover;
+    height: 100vh;
+}
+
+.home .home-slider .slide3
+{
+    background: url(https://as2.ftcdn.net/v2/jpg/02/68/34/97/1000_F_268349763_ctOf78tzN6eNM3ROlDqNJFEbvi7j30uV.jpg);
+    background-size: cover;
+}
+
+.home .home-slider .slide4
+{
+    background: url(https://img.freepik.com/premium-photo/food-set-fresh-vegetables-fruits-black-stone-background-organic-food-top-view-free-space-your-text_187166-18363.jpg);
+    background-size: cover;
+}
+
+
+.home .home-slider .slide1 .content{
+    font-size: 30px;
+    text-align: center;
+    padding: 60px;
+    line-height: 50px;
+    
+}
+
+.home .home-slider .slide2 .content{
+    font-size: 30px;
+    padding-left: 1000px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.home .home-slider .slide4 .content{
+    font-size: 50px;
+    padding-left: 800px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.home .home-slider .slide3 .content{
+    font-size: 40px;
+    text-align: center;
+    padding: 60px;
+    line-height: 50px;
+    
+}
+
+
+
+.home .home-slider .slide h1{
+    color: #fff;
+}
+
+.home .home-slider h5{
+    color: var(--lightcolor);
+}
+
+.home .home-slider .slide p{
+    color: var(--lightcolor);
+    font-size: 20px;
+}
+
+.home .home-slider .slide .btn {
+    background-color: #b4711a5d;
+    margin-top: 80px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: .5rem;
+}
+
+
+.home .home-slider .slide .btn :hover{
+    color: var(--black);
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+
+.heading h1{
+    text-align: center;
+    margin-top: 90px;
+    font-size: 50px;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 30px; */
+    background-color: #000;
+    margin-top: 20px;
+}
+
+.heading p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color:var(--lightcolor);
+    background-color: #000;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 58px;
+}
+
+.welcome .image1{
+    display: block;
+    background-color: #000;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+    border: .3rem solid var(--lightcolor);
+}
+.welcome .image1 img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 50px; */
+    font-size: 26px;
+    background-position: center;
+    background-size: cover;
+    color: var(--lightcolor);
+    width: 400px;
+    height: 300px;
+}
+
+.welcome .image1 .text h3{
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.welcome .image1 .text p{
+    color: #cdaa7c;
+    padding: 30px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.welcome .image2{
+    display: block;
+    background-color: #000;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+    border: .3rem solid var(--lightcolor);
+}
+.welcome .image2 img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 50px; */
+    font-size: 26px;
+    background-position: center;
+    background-size: cover;
+    color: var(--lightcolor);
+    width: 400px;
+    height: 300px;
+}
+
+.welcome .image2 .text h3{
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    text-align: center;
+}
+
+.welcome .image2 .text p{
+    color: #cdaa7c;
+    padding: 30px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.welcome .image3{
+    display: block;
+    background-color: #000;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+    border: .3rem solid var(--lightcolor);
+}
+.welcome .image3 img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 50px; */
+    font-size: 26px;
+    background-position: center;
+    background-size: cover;
+    color: var(--lightcolor);
+    width: 400px;
+    height: 300px;
+}
+
+.welcome .image3 .text h3{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.welcome .image3 .text p{
+    color: #cdaa7c;
+    padding: 30px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.our-menu .head{
+    font-size: 40px;
+    color: var(--lightcolor);
+    margin-top: 30px;
+}
+
+.our-menu .sub-head{
+    background-color: #333;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 95px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #d39819;
+    height: 40px;
+    font-size: 30px;
+    letter-spacing: 3px;
+   
+}
+
+.our-menu  
+{
+    background: url(navbar/our-menu-bg-1.png) left top no-repeat, url(navbar/our-menu-bg-3.jpg) ;
+}
+
+
+.our-menu .menu-container{
+   padding: 3rem 0;
+   display: grid;
+   grid-template-columns: repeat(align-items,minmax(50rem,2fr));
+}
+.our-menu .menu-container .item .item-name{
+    display: flex;
+}
+
+.item-name{
+    display: flex;
+    padding-top: 59px;
+}
+
+.item-name img{
+    padding-left: 349px;
+}
+
+.item-name h2{
+    font-family: 'Roboto', sans-serif;
+}
+.item{
+    padding-left: 100px;
+}
+
+span {
+    width: 47%;
+    display: inline-block;
+    border-width: 1px dotted #e5e5e5;
+    /* border-color: #e5e5e5; */
+}
+
+.dish{
+    display: flex;
+}
+
+.dish h3{
+    color: var(--lightcolor);
+    padding-top: 20px;
+}
+
+.dish h4{
+    padding-left: 30px;
+    padding-top: 9px;
+}
+
+.item-body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 19px;
+    color: #fff;
+    font-family:  sans-serif;
+}
+
+.item-body .row1{
+    display: block;
+}
+.item-body .row2{
+    display:block;
+    padding-left: 160px;
+}
+
+.item-body .row1 .item-menu ul li a{
+    color: #333;
+    list-style: none;
+}
+
+.item-body .row2 .item-menu ul li a{
+    color: #4b4545;
+    list-style: none;
+}
+
+
+.our-menu .images{
+    display: flex;
+}
+
+.our-menu .sub-head h3{
+    margin-top: 40px;
+}
+
+.our-menu img{
+    width: 1500px;
+    height: 730px;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 130px; */
+    margin-top: 30px;
+}
+
+.our-team{
+    margin-top: 80px;
+}
+
+.our-team .heading{
+    font-size: 40px;
+    color: #000;
+}
+.our-team .sub-heading{
+    font-size: 28px;
+    background-color: var(--black);
+    color: var(--lightcolor);
+    margin-left: 509px;
+    margin-right: 509px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+
+.our-chef{
+    width: 100%;
+    display: flex;
+    margin-top: 39px;
+    grid-template-columns: repeat(auto-fit,minmax:(50rem,2fr));
+}
+
+.our-chef .item{
+    padding: 55px;
+    position: relative;
+    z-index: 2;
+    overflow : hidden;
+}
+.our-chef .item::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+    left: 0;right: 0;bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 5;
+}
+
+.our-chef .item:hover .item:before{
+    display: block;
+}
+
+.our-chef .item .chef-info{
+    position: absolute;
+    top: 130%;
+    left: 0;right: 0;bottom: 0;top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    align-items: center;
+    transition: 1s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.our-chef .item .chef-info h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: .8rem 0;
+    text-transform: uppercase;
+}
+
+
+.our-chef .item .chef-info span{
+    color: var(--lightcolor);
+    font-size: 2rem;
+    padding: .8rem 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.our-chef .item .chef-info ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 3rem 0;
+   
+}
+
+.our-chef .item .chef-info ul li a{
+    color: #fff;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+.our-chef .item:hover.chef-info{
+    top: 0;
+    
+}
+.our-chef .item img{
+    width: 400px;
+    height: 400px;
+}
+
+.heading{
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.sub-heading{
+    background-color: var(--black);
+    color: var(--lightcolor);
+    font-size: 30px;
+    margin-top: 14px;
+    /* margin-left: 500px;
+    margin-right: 500px; */
+}
+
+.reservation{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.reservation .image{
+    width: 55%;
+    background: url(navbar/book-a-table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 9rem ;
+}
+
+.reservation .form{
+    background: #181818;
+    width: 45%;
+    padding: 9rem 7%;
+}
+
+.reservation .form-holder{
+    display: flex;
+    margin-top: 40px;
+    padding: 60px;
+}
+
+.reservation .form form input,
+.reservation .form form select{
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+    background: none;
+    border-bottom: .1rem solid #b7b3b3;
+    color: #b7b3b3;
+    font-size: 1.8rem;
+    font-weight: 300rem;
+}
+
+.reservation .form form input::placeholder{
+    color: #b7b3b3;
+}
+.reservation .form h1{
+    color: #fff;
+}
+
+form a{
+    border: .3rem solid var(--lightcolor);
+    color: var(--lightcolor);
+    font-size: 20px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+a :hover{
+    color: #ffff;
+}
+
+.blog-welcome .heading {
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.blog-welcome .sub-heading{
+    font-size: 30px;
+    color: #cdaa7c;
+    background-color: #000;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+}
+
+.blog-welcome .box-container{
+    padding: 40px;
+}
+
+.blog-welcome .box-container .box{
+    background-color: #000;
+    /* border: 3px solid #cdaa7c; */
+    /* padding: 40px; */
+    text-align: center;
+    
+}
+
+.box-container {
+    display: flex;
+    background-color: #000;
+}
+
+.box-container img{
+    width: 430px;
+    height: 430px;
+}
+
+.blog-welcome .content{
+    text-align: left;
+    position: relative;
+    padding: 50px;
+}
+
+.blog-welcome .content p
+{
+    color: #cdaa7c;
+    text-align: center;
+}
+
+.blog-welcome .content h3{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.blog-welcome .content a{
+    font-size: 14px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 140px;
+    text-decoration: underline;
+    /* background-color: #cdaa7c; */
+    
+}
+
+.blog-welcome .content a{
+    color: #fff;
+}
+
+.blog-welcome .content img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.footer{
+    background: #000;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 1.3rem;
+    /*   */
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,2fr));
+    color: #b2b2b2;
+    grid-gap: 1rem;
+    padding: 4rem 0;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.footer .container div{
+    padding: 0 7rem;
+}
+
+.footer .container h3{
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: .8rem;
+}
+
+.footer .container input{
+    width: 100%;
+    border: 1px solid #b2b2b2;
+    padding: .5rem .8rem;
+    background: transparent;
+    border-radius: 20px;
+}
+
+.footer .container ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+
+.footer .container ul li a{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 38px;
+    list-style: none;
+}
+
+.footer .container span{
+    display: block;
+}
